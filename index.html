@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <title>Document</title>  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="flex-container header-nav-container">
+        <li class="sidebar-icon-container">
+          <i class="arrow-left"></i>
+          <img src="images/icons/burger.svg" alt="left menu" 
+          class="icons-large">
+        </li>
+        <li class="search-bar-container"><input type="text" 
+          class="search-bar-input"></li>
+        <li><img src="images/icons/person-add.svg" alt="profile add" 
+          class="icons-large"></li>
+        <li><img src="images/icons/calendar-reminder.svg" alt="reminder"
+          class="icons-large"></li>
+        <li><img src="images/icons/grid-solid.svg" alt="grid icon" 
+          class="icons-large"></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="side-navbar">
+    <ul>
+      <li class="side-nav-profile"> 
+        <img src="images/raccoon.jpg" alt="a raccoon" class="nav-profile-pic">
+        <p>Dumpsty Diver <i class="arrow-down"></i></p>
+      </li>
+      <li class="border-top">
+        <p class="side-nav-subtitle">Main</p>
+        <ul class="side-sub-nav">
+          <li><img class="icons" src="images/icons/home.svg" 
+            alt="home icon"> HOME</li>
+          <li><img class="icons" src="images/icons/briefcase.svg" 
+            alt="jobs icon"> JOBS</li>
+          <li><img class="icons" src="images/icons/resume.svg" 
+            alt="resumes icon"> RESUMES</li>
+          <li><img class="icons" src="images/icons/clipboard.svg" 
+            alt="tasks icon"> TASKS</li>
+          <li><img class="icons" src="images/icons/calendar.svg" 
+            alt="home icon"> CALENDAR</li>
+        </ul>
+      </li>
+      <li class="border-top">
+        <p class="side-nav-subtitle">Admin</p>
+        <ul class="side-sub-nav">
+          <li><img src="images/icons/person-group.svg" alt="users icon" 
+            class="icons"> USERS</li>
+          <li><img src="images/icons/location.svg" alt="locations icon" 
+            class="icons"> LOCATIONS</li>
+          <li><img src="images/icons/workflow.svg" alt="workflows icon" 
+            class="icons"> WORKFLOWS</li>
+          <li><img src="images/icons/paper-light.svg" alt="job-boards icon" 
+            class="icons"> JOB BOARDS</li>
+          <li><img src="images/icons/share.svg" alt="social icon" 
+            class="icons"> SOCIAL</li>
+        </ul>
+      </li>
+      <li class="border-top">
+        <p class="side-nav-subtitle">Categories</p>
+        <ul class="side-sub-nav">
+          <li><input type="checkbox" name="Administrative" 
+            value="Admin"> Administrative</li>
+          <li><input type="checkbox" name="Administrative" 
+            value="Admin"> Design</li>
+          <li><input type="checkbox" name="Administrative" 
+            value="Admin"> Executive</li>
+          <li><input type="checkbox" name="Administrative" 
+            value="Admin"> Human Resources</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <section class="section-1 flex-container">
+    <div>
+    <h3>Dumpster Diving Specialist</h3>
+      <p><img src="images/icons/location.svg" alt="location" class="icons">
+      San Francisco, CA <span>&#8226;</span> Preview this post</p>
+    </div>
+    <ul class="status-button-group">
+      <li class="dot-status"><span class="status-dot"></span> OPEN</li>
+      <li class="round-bg-button"><img src="images/icons/bookmark.svg" 
+        alt="tag" class="icons"></li>
+      <li class="round-bg-button"><img src="images/icons/pen.svg" 
+        alt="edit" class="icons"></li>
+      <li class="round-bg-button"><img src="images/icons/trash.svg" 
+        alt="trash" class="icons"></li>
+    </ul>
+  </section>
+  <nav class="section-1-nav">
+    <ul class="flex-container">
+      <li>SUMMARY</li>
+      <li>APPLICANTS</li>
+      <li>JOB BOARD</li>
+      <li>INTERVIEWS</li>
+      <li>ACTIVITY</li>
+      <li>BROADCAST</li>
+      <li>NOTIFICATIONS</li>
+    </ul>
+  </nav>
+  <section class="section-2">
+    <div class="doughnut-chart-container">
+      <div class="doughnut-container"><span class="doughnut-label">3,154
+        <p class="doughnut-sublabel">APLICANTS</p></span><canvas 
+        id="doughnut-chart-1" width=125 height=125></canvas>
+      </div>
+      <div class="doughnut-container"><span class="doughnut-label">1,546
+        <p class="doughnut-sublabel">INTERVIEWS</p></span><canvas 
+        id="doughnut-chart-2" width=125 height=125></canvas>
+      </div>
+      <div class="doughnut-container"><span class="doughnut-label">912
+        <p class="doughnut-sublabel">FORWARDS</p></span><canvas 
+        id="doughnut-chart-3" width=125 height=125></canvas>
+      </div>
+        <p class="doughnut-chart-title">TOTALS <span>&#8226;</span> Out of 5,231 views</p>
+    </div>     
+    <div class="chart-container">
+      <canvas id="bar-chart" width=400 height=150></canvas>
+      <p class="doughnut-chart-title">APPLICANTS/DAY</p>
+    </div>
+    <span class="hide-job-description hover-state"><i class="arrow-up"></i></span>
+  </section>
+  <article class="hide-element">
+    <table class="table-container">
+      <col width="25%">
+      <col width="75%">
+      <th colspan="2" class="table-title">
+        JOB DESCRIPTION <span class="edit-job-description">
+        <img src="images/icons/pen.svg" alt="edit" class="icons">Edit </span>
+      </th>
+      <tr>
+        <td>POSITION TITLE</td>
+        <td>Customer Serive Representative</td>
+      </tr>
+      <tr>
+        <td>LOCATION</td>
+        <td>San Francisco, CA</td>
+      </tr>
+      <tr>
+        <td>EMPLOYMENT TYPE</td>
+        <td>Full-time</td>
+      </tr>
+      <tr>
+        <td>EXPERIENCE</td>
+        <td>Mid-level</td>
+      </tr>
+      <tr>
+        <td>STATUS</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td>DESCRIPTION</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorem placeat eius ipsa ad ipisci, ullam repudiandae? A odit 
+            aliquam assumenda nostrum magnam cum. Sapiente facilis assumenda 
+            inventore, aliquam necessitatibus veniam doloribus?</td>
+      </tr>
+      <tr>
+        <td>HIRING LEAD</td>
+        <td><img src="images/raccoon-executive.jpg" alt="hiring raccon" class="hiring-profile-pic"> Tom TyCoon</td>
+      </tr>
+      <tr>
+        <td>SALARY</td>
+        <td>ALL YOU CAN EAT LEFTOVERS</td>
+      </tr>
+    </table>
+  </article>
+  <aside class="right-side">
+    <ul>
+      <li>
+        <ul class="social-media-links">
+          <li class="social-bg-color1"><img class="icons" src="images/icons/facebook.svg" 
+            alt="facebook">Post to Facebook</li>
+          <li class="social-bg-color2"><img class="icons" src="images/icons/twitter.svg" 
+            alt="twitter">Tweet this Job</li>
+          <li class="social-bg-color3"><img class="icons" src="images/icons/linkedin.svg" 
+            alt="linkedin">Post to Linkedin</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="aside-input">
+          <li><img class="icons" src="images/icons/globe.svg" 
+            alt="link to job">Link to this Job</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
+          Integer mollis neque eget vestibpend</li>
+          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="copy-button">COPY</span></li>
+        </ul>
+        <ul class="aside-input aside-bordered">
+          <li><img class="icons" src="images/icons/grid-hollow.svg" 
+            alt="button widget">Use the Button Widget</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
+          Integer mollis neque eget vestibpend</li>
+          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="copy-button">COPY</span></li>
+        </ul>
+        <ul class="aside-input">
+          <li><img class="icons" src="images/icons/paperplane.svg" 
+            alt="upload resume">Upload Resumes by Email</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
+          Integer mollis neque eget vestibpend</li>
+          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+</body>
+  <script src="js/charting.js"></script>
+  <script src="js/main.js"></script>
+</html>
