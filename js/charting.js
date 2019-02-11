@@ -2,6 +2,18 @@ var barChart = document.querySelector('#bar-chart').getContext('2d');
 var doughnutChart1 = document.querySelector('#doughnut-chart-1').getContext('2d');
 var doughnutChart2 = document.querySelector('#doughnut-chart-2').getContext('2d');
 var doughnutChart3 = document.querySelector('#doughnut-chart-3').getContext('2d');
+// var barChartContainer = document.querySelector('#bar-chart');
+// fitToContainer(barChartContainer);
+// function fitToContainer(canvas){
+//   // Make it visually fill the positioned parent
+//   canvas.style.width ='300px';
+//   canvas.style.height='200px';
+//   // ...then set the internal size to match
+//   canvas.width  = canvas.offsetWidth;
+//   canvas.height = canvas.offsetHeight;
+// }
+
+
 
 var chart = new Chart(barChart, {
   type: 'bar', 
@@ -13,7 +25,7 @@ var chart = new Chart(barChart, {
       data: [
         50,230,300,370,180,280,110,
         30,300,390,250,220,180,80 ],
-      backgroundColor: 'lightgray'
+      backgroundColor: 'orange'
     }]
   },
   options:{

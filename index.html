@@ -13,32 +13,32 @@
 <body>
   <header>
     <nav>
-      <ul class="flex-container header-nav-container">
-        <li class="sidebar-icon-container">
-          <i class="arrow-left"></i>
+      <ul class="searchbar-nav__container is-flex ">
+        <li class="is-relative">
+          <i class="arrow-left is-absolute"></i>
           <img src="images/icons/burger.svg" alt="left menu" 
           class="icons-large">
         </li>
-        <li class="search-bar-container"><input type="text" 
-          class="search-bar-input"></li>
+        <li class="flex-value-1"><input type="text" 
+          class="searchbar-nav__input"></li>
         <li><img src="images/icons/person-add.svg" alt="profile add" 
           class="icons-large"></li>
         <li><img src="images/icons/calendar-reminder.svg" alt="reminder"
           class="icons-large"></li>
-        <li><img src="images/icons/grid-solid.svg" alt="grid icon" 
+        <li><img src="images/icons/grid-solid.svg" alt="grid icon"
           class="icons-large"></li>
       </ul>
     </nav>
   </header>
   <nav class="side-navbar">
     <ul>
-      <li class="side-nav-profile"> 
-        <img src="images/raccoon.jpg" alt="a raccoon" class="nav-profile-pic">
-        <p>Dumpsty Diver <i class="arrow-down"></i></p>
+      <li class="side-navbar__profile"> 
+        <img src="images/raccoon.jpg" alt="a raccoon" class="side-navbar__profile-pic">
+        <p>Trash Panda <i class="arrow-down"></i></p>
       </li>
       <li class="border-top">
-        <p class="side-nav-subtitle">Main</p>
-        <ul class="side-sub-nav">
+        <p class="side-navbar__sub-nav-title">Main</p>
+        <ul class="side-navbar__sub-nav">
           <li><img class="icons" src="images/icons/home.svg" 
             alt="home icon"> HOME</li>
           <li><img class="icons" src="images/icons/briefcase.svg" 
@@ -52,8 +52,8 @@
         </ul>
       </li>
       <li class="border-top">
-        <p class="side-nav-subtitle">Admin</p>
-        <ul class="side-sub-nav">
+        <p class="side-navbar__sub-nav-title">Admin</p>
+        <ul class="side-navbar__sub-nav">
           <li><img src="images/icons/person-group.svg" alt="users icon" 
             class="icons"> USERS</li>
           <li><img src="images/icons/location.svg" alt="locations icon" 
@@ -67,8 +67,8 @@
         </ul>
       </li>
       <li class="border-top">
-        <p class="side-nav-subtitle">Categories</p>
-        <ul class="side-sub-nav">
+        <p class="side-navbar__sub-nav-title">Categories</p>
+        <ul class="side-navbar__sub-nav">
           <li><input type="checkbox" name="Administrative" 
             value="Admin"> Administrative</li>
           <li><input type="checkbox" name="Administrative" 
@@ -81,24 +81,24 @@
       </li>
     </ul>
   </nav>
-  <section class="section-1 flex-container">
+  <section class="job-title is-flex">
     <div>
     <h3>Dumpster Diving Specialist</h3>
       <p><img src="images/icons/location.svg" alt="location" class="icons">
       San Francisco, CA <span>&#8226;</span> Preview this post</p>
     </div>
-    <ul class="status-button-group">
-      <li class="dot-status"><span class="status-dot"></span> OPEN</li>
-      <li class="round-bg-button"><img src="images/icons/bookmark.svg" 
+    <ul class="is-flex">
+      <li class="job-title__status"><span class="job-title__status-color"></span> OPEN</li>
+      <li class="job-title__buttons"><img src="images/icons/bookmark.svg" 
         alt="tag" class="icons"></li>
-      <li class="round-bg-button"><img src="images/icons/pen.svg" 
+      <li class="job-title__buttons"><img src="images/icons/pen.svg" 
         alt="edit" class="icons"></li>
-      <li class="round-bg-button"><img src="images/icons/trash.svg" 
+      <li class="job-title__buttons"><img src="images/icons/trash.svg" 
         alt="trash" class="icons"></li>
     </ul>
   </section>
-  <nav class="section-1-nav">
-    <ul class="flex-container">
+  <nav class="job-info-nav">
+    <ul class="job-info-nav--media is-flex">
       <li>SUMMARY</li>
       <li>APPLICANTS</li>
       <li>JOB BOARD</li>
@@ -108,39 +108,42 @@
       <li>NOTIFICATIONS</li>
     </ul>
   </nav>
-  <section class="section-2">
-    <div class="doughnut-chart-container">
-      <div class="doughnut-container"><span class="doughnut-label">3,154
+  <section class="chart-section is-relative is-flex">
+    <div class="chart-section__doughnut-container is-flex is-relative">
+      <div class="chart-section__doughnut is-relative">
+        <span class="doughnut-label is-absolute">3,154
         <p class="doughnut-sublabel">APLICANTS</p></span><canvas 
         id="doughnut-chart-1" width=125 height=125></canvas>
       </div>
-      <div class="doughnut-container"><span class="doughnut-label">1,546
+      <div class="chart-section__doughnut is-relative">
+        <span class="doughnut-label is-absolute">1,546
         <p class="doughnut-sublabel">INTERVIEWS</p></span><canvas 
         id="doughnut-chart-2" width=125 height=125></canvas>
       </div>
-      <div class="doughnut-container"><span class="doughnut-label">912
+      <div class="chart-section__doughnut is-relative">
+        <span class="doughnut-label is-absolute">912
         <p class="doughnut-sublabel">FORWARDS</p></span><canvas 
         id="doughnut-chart-3" width=125 height=125></canvas>
       </div>
-        <p class="doughnut-chart-title">TOTALS <span>&#8226;</span> Out of 5,231 views</p>
+        <p class="chart-section__chart-titles is-absolute">TOTALS <span>&#8226;</span> Out of 5,231 views</p>
     </div>     
-    <div class="chart-container">
-      <canvas id="bar-chart" width=400 height=150></canvas>
-      <p class="doughnut-chart-title">APPLICANTS/DAY</p>
+    <div class="chart-container is-flex is-relative">
+      <canvas id="bar-chart" width=350 height=175></canvas>
+      <p class="chart-section__chart-titles is-absolute">APPLICANTS/DAY</p>
     </div>
-    <span class="hide-job-description hover-state"><i class="arrow-up"></i></span>
+    <span class="hide-job-description-button is-absolute"><i class="arrow-up"></i></span>
   </section>
-  <article class="hide-element">
-    <table class="table-container">
+  <article>
+    <table class="job-description-table">
       <col width="25%">
       <col width="75%">
-      <th colspan="2" class="table-title">
-        JOB DESCRIPTION <span class="edit-job-description">
+      <th colspan="2" class="job-description-table__title">
+        JOB DESCRIPTION <span class="job-description__edit-button">
         <img src="images/icons/pen.svg" alt="edit" class="icons">Edit </span>
       </th>
       <tr>
         <td>POSITION TITLE</td>
-        <td>Customer Serive Representative</td>
+        <td>Dumpster Diving Specialist</td>
       </tr>
       <tr>
         <td>LOCATION</td>
@@ -152,7 +155,7 @@
       </tr>
       <tr>
         <td>EXPERIENCE</td>
-        <td>Mid-level</td>
+        <td>Dumpster Dived at least 10 times</td>
       </tr>
       <tr>
         <td>STATUS</td>
@@ -167,7 +170,7 @@
       </tr>
       <tr>
         <td>HIRING LEAD</td>
-        <td><img src="images/raccoon-executive.jpg" alt="hiring raccon" class="hiring-profile-pic"> Tom TyCoon</td>
+        <td><img src="images/raccoon-executive.jpg" alt="hiring raccon" class="job-description-table__profile">Rocket Bandit</td>
       </tr>
       <tr>
         <td>SALARY</td>
@@ -175,39 +178,39 @@
       </tr>
     </table>
   </article>
-  <aside class="right-side">
+  <aside class="social-links">
     <ul>
       <li>
-        <ul class="social-media-links">
-          <li class="social-bg-color1"><img class="icons" src="images/icons/facebook.svg" 
+        <ul class="social-links__social">
+          <li class="social-links--color1 is-relative"><img class="icons is-absolute" src="images/icons/facebook.svg" 
             alt="facebook">Post to Facebook</li>
-          <li class="social-bg-color2"><img class="icons" src="images/icons/twitter.svg" 
+          <li class="social-links--color2 is-relative"><img class="icons is-absolute" src="images/icons/twitter.svg" 
             alt="twitter">Tweet this Job</li>
-          <li class="social-bg-color3"><img class="icons" src="images/icons/linkedin.svg" 
+          <li class="social-links--color3 is-relative"><img class="icons is-absolute" src="images/icons/linkedin.svg" 
             alt="linkedin">Post to Linkedin</li>
         </ul>
       </li>
       <li>
-        <ul class="aside-input">
+        <ul class="social-links__links">
           <li><img class="icons" src="images/icons/globe.svg" 
             alt="link to job">Link to this Job</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="copy-button">COPY</span></li>
+          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="social-links__copy-button">COPY</span></li>
         </ul>
-        <ul class="aside-input aside-bordered">
+        <ul class="social-links__links top-bottom-border">
           <li><img class="icons" src="images/icons/grid-hollow.svg" 
             alt="button widget">Use the Button Widget</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="copy-button">COPY</span></li>
+          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="social-links__copy-button">COPY</span></li>
         </ul>
-        <ul class="aside-input">
+        <ul class="social-links__links">
           <li><img class="icons" src="images/icons/paperplane.svg" 
             alt="upload resume">Upload Resumes by Email</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="aside-input-container"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"></li>
+          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"></li>
         </ul>
       </li>
     </ul>
