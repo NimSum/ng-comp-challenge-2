@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
+  /*border: 1px dotted black;*/
+}
+
+html {
+  margin:    0 auto;
+  max-width: 1500px;
 }
 
 body {
-  max-width: 1400px;
-  max-height: 700px;
   display: grid;
   grid-template-columns: auto 5fr 2fr;
   grid-template-rows: repeat(auto, 5) ;
@@ -77,10 +81,12 @@ i {
   display: none;
 }
 
-.arrow-down {
-  transform: rotate(45deg);
-  margin-left: 5px;
-  margin-bottom: 2px;
+.not-visible {
+  visibility: hidden;
+}
+
+input[type='checkbox'] { 
+  transform: scale(1.5); 
 }
 
 .arrow-left {
@@ -97,6 +103,10 @@ i {
   transform: rotate(-135deg);
 }
 
+.arrow-down {
+  transform: rotate(45deg);
+}
+
 .top-bottom-border {
   border-top: 2px solid lightgray;
   border-bottom: 2px solid lightgray;
@@ -105,6 +115,10 @@ i {
 .searchbar-nav__container li {
   border-bottom: 1px solid lightgray;
   border-left: 1px solid lightgray;
+}
+
+.hover-blue:hover {
+  background-color: lightblue;
 }
 
 .border-top {
@@ -134,7 +148,6 @@ i {
   background-color: #C9ADA7;
   width: 165px;
   grid-area: side-navbar;
-  /*display: none;*/
 }
 
 @keyframes slideRight {
@@ -163,8 +176,14 @@ i {
 }
 
 .side-navbar__sub-nav li {
-  margin: 15px 10px;
-  font-size: 1rem/
+  margin: 15px 0;
+  padding: 0 10px;
+}
+.side-navbar__sub-nav li:hover {
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: background-color .5s linear;
+  background-color: #fff;
 }
 
 .job-title {
@@ -226,7 +245,7 @@ i {
 }
 
 .chart-section {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 25px 16px;
   background-color: #F2E9E4;
   grid-area: chart-section;
   justify-content: space-around;
@@ -237,7 +256,7 @@ i {
 .chart-section__doughnut-container,
 .chart-container {
   justify-content: center;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; 
   flex: 1;
 }
 
@@ -275,6 +294,7 @@ i {
   width: 26px;
   text-align: center;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .job-description-table__profile {
@@ -294,6 +314,7 @@ i {
   border-radius: 5px;
   background-color: #C9ADA7;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .job-description-table tr td {
@@ -324,6 +345,7 @@ i {
   background-color: #0077B5;
   color: #fff;
 }
+
 .social-links {
   grid-area: social-links;
   background-color: #F2E9E4;
@@ -336,6 +358,7 @@ i {
 
 .social-links__social li {
   text-align: center;
+  cursor: pointer;
   margin: 10px;
   padding: 8px;
   border-radius: 3px;
@@ -372,6 +395,7 @@ i {
   background-color: lightgreen;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
 }
 
 /* MEDIUM DEVICE*/
@@ -387,9 +411,9 @@ i {
       "side-navbar description-table" 
       "side-navbar social-links"
   }
+
   .side-navbar {
     display: none;
-    /*USE JS*/
   }
 
   .job-info-nav--media {
