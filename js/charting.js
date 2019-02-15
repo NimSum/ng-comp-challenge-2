@@ -2,13 +2,13 @@ var barChart = document.querySelector('#bar-chart').getContext('2d');
 var doughnutChart1 = document.querySelector('#doughnut-chart-1').getContext('2d');
 var doughnutChart2 = document.querySelector('#doughnut-chart-2').getContext('2d');
 var doughnutChart3 = document.querySelector('#doughnut-chart-3').getContext('2d');
+
+// //fit canvas to container
 // var barChartContainer = document.querySelector('#bar-chart');
 // fitToContainer(barChartContainer);
 // function fitToContainer(canvas){
-//   // Make it visually fill the positioned parent
-//   canvas.style.width ='300px';
-//   canvas.style.height='200px';
-//   // ...then set the internal size to match
+//   canvas.style.width ='100%';
+//   canvas.style.height='100%';
 //   canvas.width  = canvas.offsetWidth;
 //   canvas.height = canvas.offsetHeight;
 // }
