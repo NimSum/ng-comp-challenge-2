@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <title>Document</title>  
@@ -20,7 +21,7 @@
           class="icons-large">
         </li>
         <li class="flex-value-1"><input type="text" 
-          class="searchbar-nav__input"></li>
+          class="searchbar-nav__input" placeholder="Search for a job, task or resume"></li>
         <li class="hover-blue"><img src="images/icons/person-add.svg" alt="profile add" 
           class="icons-large"></li>
         <li class="hover-blue"><img src="images/icons/calendar-reminder.svg" alt="reminder"
@@ -70,13 +71,13 @@
         <p class="side-navbar__sub-nav-title">Categories</p>
         <ul class="side-navbar__sub-nav">
           <li><input type="checkbox" name="Administrative" 
-            value="Admin" checked> Administrative</li>
+            value="Admin" checked>Administrative</li>
           <li><input type="checkbox" name="Administrative" 
-            value="Admin"> Design</li>
+            value="Admin">Design</li>
           <li><input type="checkbox" name="Administrative" 
-            value="Admin"> Executive</li>
+            value="Admin">Executive</li>
           <li><input type="checkbox" name="Administrative" 
-            value="Admin"> Human Resources</li>
+            value="Admin">Human Resources</li>
         </ul>
       </li>
     </ul>
@@ -88,7 +89,8 @@
       San Francisco, CA <span>&#8226;</span> Preview this post</p>
     </div>
     <ul class="is-flex">
-      <li class="job-title__status hover-blue"><span class="job-title__status-color"></span> OPEN</li>
+      <li class="job-title__status hover-blue">
+        <span class="job-title__status-color"></span> OPEN</li>
       <li class="job-title__buttons hover-blue"><img src="images/icons/bookmark.svg" 
         alt="tag" class="icons"></li>
       <li class="job-title__buttons hover-blue"><img src="images/icons/pen.svg" 
@@ -125,7 +127,8 @@
         <p class="doughnut-sublabel">FORWARDS</p></span><canvas 
         id="doughnut-chart-3" width=125 height=125></canvas>
       </div>
-        <p class="chart-section__chart-titles is-absolute">TOTALS <span>&#8226;</span> Out of 5,231 views</p>
+        <p class="chart-section__chart-titles is-absolute">TOTALS 
+          <span>&#8226;</span> Out of 5,231 views</p>
     </div>     
     <div class="chart-container is-flex is-relative">
       <canvas id="bar-chart" width=350 height=175></canvas>
@@ -170,11 +173,12 @@
       </tr>
       <tr>
         <td>HIRING LEAD</td>
-        <td><img src="images/raccoon-executive.jpg" alt="hiring raccon" class="job-description-table__profile"> Rocket Raccoon</td>
+        <td><img src="images/raccoon-executive.jpg" alt="hiring raccon" 
+          class="job-description-table__profile"> Rocket Raccoon</td>
       </tr>
       <tr>
         <td>SALARY</td>
-        <td>ALL YOU CAN EAT LEFTOVERS</td>
+        <td><b>ALL YOU CAN EAT LEFTOVERS</b></td>
       </tr>
     </table>
   </article>
@@ -182,11 +186,14 @@
     <ul>
       <li>
         <ul class="social-links__social">
-          <li class="social-links--color1 is-relative"><img class="icons is-absolute" src="images/icons/facebook.svg" 
+          <li class="social-links--color1 is-relative">
+            <img class="icons is-absolute" src="images/icons/facebook.svg" 
             alt="facebook">Post to Facebook</li>
-          <li class="social-links--color2 is-relative"><img class="icons is-absolute" src="images/icons/twitter.svg" 
+          <li class="social-links--color2 is-relative">
+            <img class="icons is-absolute" src="images/icons/twitter.svg" 
             alt="twitter">Tweet this Job</li>
-          <li class="social-links--color3 is-relative"><img class="icons is-absolute" src="images/icons/linkedin.svg" 
+          <li class="social-links--color3 is-relative">
+            <img class="icons is-absolute" src="images/icons/linkedin.svg" 
             alt="linkedin">Post to Linkedin</li>
         </ul>
       </li>
@@ -196,21 +203,31 @@
             alt="link to job">Link to this Job</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="social-links__copy-button">COPY</span></li>
+          <li class="is-flex">
+            <p class="social-links__link-copy">
+            http://loremipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?</p>
+            <span class="social-links__copy-button is-rounded-right">COPY</span></li>
         </ul>
         <ul class="social-links__links top-bottom-border">
-          <li><img class="icons" src="images/icons/grid-hollow.svg" 
+          <li><img class="icons" src="images/icons/grid-hollow.svg"
             alt="button widget">Use the Button Widget</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"><span class="social-links__copy-button">COPY</span></li>
+          <li class="is-flex">
+            <p class="social-links__link-copy">
+            http://loremipsum dolor sit aßmet, consectetur adipisicing elit.
+            Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?</p>
+            <span class="social-links__copy-button is-rounded-right">COPY</span></li>
         </ul>
         <ul class="social-links__links">
           <li><img class="icons" src="images/icons/paperplane.svg" 
             alt="upload resume">Upload Resumes by Email</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipis cing elit. 
           Integer mollis neque eget vestibpend</li>
-          <li class="is-flex"><input type="text" placeholder="http://loremipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?"></li>
+          <li class="is-flex"><p class="social-links__link-copy rounded-right">
+            <span>http://loremipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorem placeat eius ipsa ad ipisci, ullam repudiandae?</p></li>
         </ul>
       </li>
     </ul>

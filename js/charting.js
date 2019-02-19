@@ -3,18 +3,6 @@ var doughnutChart1 = document.querySelector('#doughnut-chart-1').getContext('2d'
 var doughnutChart2 = document.querySelector('#doughnut-chart-2').getContext('2d');
 var doughnutChart3 = document.querySelector('#doughnut-chart-3').getContext('2d');
 
-// //fit canvas to container
-// var barChartContainer = document.querySelector('#bar-chart');
-// fitToContainer(barChartContainer);
-// function fitToContainer(canvas){
-//   canvas.style.width ='100%';
-//   canvas.style.height='100%';
-//   canvas.width  = canvas.offsetWidth;
-//   canvas.height = canvas.offsetHeight;
-// }
-
-
-
 var chart = new Chart(barChart, {
   type: 'bar', 
   data: {
@@ -25,7 +13,7 @@ var chart = new Chart(barChart, {
       data: [
         50,230,300,370,180,280,110,
         30,300,390,250,220,180,80 ],
-      backgroundColor: 'orange'
+      backgroundColor: '#5cb85c'
     }]
   },
   options:{
@@ -43,7 +31,7 @@ var doughnutChart1 = new Chart(doughnutChart1,{
     labels: ['Applicants'],
     datasets: [{
       data: [3154, 846],
-      backgroundColor: ['red', 'lightgray'],
+      backgroundColor: ['#d9534f', 'lightgray'],
       borderWidth: 0
     }],
   },
@@ -63,7 +51,7 @@ var doughnutChart2 = new Chart(doughnutChart2,{
     labels: ['Interviews'],
     datasets: [{
       data: [1546, 2454],
-      backgroundColor: ['orange', 'lightgray'],
+      backgroundColor: ['#5cb85c', 'lightgray'],
       borderWidth: 0
     }]
   },
@@ -83,7 +71,7 @@ var doughnutChart3 = new Chart(doughnutChart3,{
     labels: ['Forwards'],
     datasets: [{
       data: [912,3088],
-      backgroundColor: ['orange', 'lightgray'],
+      backgroundColor: ['#5cb85c', 'lightgray'],
       borderWidth: 0
     }]
   },
