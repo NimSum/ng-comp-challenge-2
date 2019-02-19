@@ -9,7 +9,7 @@ Create a responsive page layout based on the comp provided.
 
 ![Desktop](images/readme-images/desktop-show-nav.jpg)
 ![Desktop2](images/readme-images/desktop-hide-nav.jpg)
-![SM-MD Devices](images/readme-images/mobile-jpg)  
+![SM Devices](images/readme-images/mobile.jpg)  
 
 **Goals**
 1. Implement BEM/SMACSS guidelines
